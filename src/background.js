@@ -138,7 +138,7 @@ async function blockUrl(baseUrl) {
         priority: 1,
         action: { type: "block" },
         condition: {
-          urlFilter: baseUrl,
+          urlFilter: baseUrl + ".mp3",
           resourceTypes: ["media", "xmlhttprequest", "other"]
         }
       }],
